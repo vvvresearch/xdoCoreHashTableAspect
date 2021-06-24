@@ -1,0 +1,8 @@
+<aspectj>
+	<aspects>
+		<aspect name="ru.vvvresearch.SyncHashTableAspect"/>
+		<weaver options="-verbose -showWeaveInfo">
+			<include within="oracle.xdo.common.util.HashTable"/>
+		</weaver>
+	</aspects>
+</aspectj>
